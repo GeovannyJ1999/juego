@@ -1,27 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!-- Contenedor principal LinearLayout con orientación vertical -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/menu"
     android:gravity="center"
     android:orientation="vertical">
 
+    <!-- Botón para la operación de suma con fondo de color -->
     <Button
         android:id="@+id/btnSum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#FF9800"
         android:text="Suma" />
 
+    <!-- Botón para la operación de resta con fondo de color-->
     <Button
         android:id="@+id/btnSub"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#FF9800"
         android:text="Resta" />
+
+    <!-- Botón para acceder a las instrucciones con fondo de color y un espaciado  -->
     <Button
         android:id="@+id/btnInstructions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Instrucciones"
         android:layout_gravity="center"
-        android:padding="10dp"/>
+        android:backgroundTint="#FF9800"
+        android:padding="10dp"
+        android:text="Instrucciones" />
 
 </LinearLayout>

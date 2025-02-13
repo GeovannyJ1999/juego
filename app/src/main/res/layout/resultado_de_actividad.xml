@@ -2,28 +2,59 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical">
+    android:background="@drawable/fin"
+    android:orientation="vertical"
+    android:gravity="center">
 
-    <TextView
-        android:id="@+id/txtResult"
+    <!-- Espacio superior aumentado para bajar el texto -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" />  <!-- Aumentamos este peso -->
+
+    <!-- Contenedor del texto dentro del área blanca -->
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Resultado"
-        android:textSize="24sp" />
-    <TextView
-        android:id="@+id/txtScore"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Aciertos: 0\nErrores: 0"
-        android:textSize="18sp"
-        android:textColor="@android:color/black"
-        android:layout_gravity="center"
-        android:paddingTop="10dp"/>
+        android:gravity="center"
+        android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resultado"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/txtScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aciertos: 0\nErrores: 0"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:paddingTop="10dp"/>
+    </LinearLayout>
+
+    <!-- Espacio inferior reducido para bajar más el texto -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Botón en la parte inferior -->
     <Button
         android:id="@+id/btnRestart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Reiniciar" />
+        android:text="Reiniciar"
+        android:layout_gravity="center"
+        android:backgroundTint="#FF9800"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="30dp"/> <!-- Ajusta si necesitas más espacio -->
+
 </LinearLayout>

@@ -3,23 +3,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/instrucciones"
     android:gravity="center"
     android:padding="20dp">
+
+    <!-- TextView para mostrar las instrucciones con estilo y espaciado,centrado y color de letra -->
 
     <TextView
         android:id="@+id/txtInstructions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Instrucciones:\n\n1. Selecciona el tipo de operación (Suma o Resta).\n2. Responde 5 preguntas.\n3. Si aciertas al menos 3, ganas.\n4. Los errores también se cuentan.\n\n¡Diviértete jugando!"
-        android:textSize="18sp"
-        android:textAlignment="center"
         android:gravity="center"
-        android:paddingBottom="20dp"/>
-
+        android:paddingBottom="20dp"
+        android:textStyle="bold"
+        android:text="Instrucciones:\n\n1. Selecciona el tipo de operación (Suma o Resta).\n2. Responde 5 preguntas.\n3. Si aciertas al menos 3, ganas.\n4. Los errores también se cuentan.\n\n¡Diviértete jugando!"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColor="#000000"/>
+    <!-- Botón para volver a la pantalla de menu de actividad tiene color y espaciado  -->
     <Button
         android:id="@+id/btnBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#FF9800"
         android:text="Volver"
         android:padding="10dp"/>
 </LinearLayout>
